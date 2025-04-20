@@ -1,3 +1,4 @@
+// Tüm sayfanın isteklerini kontrol eder. URL bazlı yönlendirme yapar.
 import { type NextRequest } from "next/server";
 import { updateSession } from "@/utils/supabase/middleware";
 
