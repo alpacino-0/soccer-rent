@@ -3,7 +3,7 @@ import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Header from "@/components/layout/header";
-
+import Footer from "@/components/layout/footer";
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "http://localhost:3000";
@@ -39,12 +39,9 @@ export default function RootLayout({
               <div className="flex flex-col max-w-7xl w-full mx-auto p-5">
                 {children}
               </div>
-              <footer className="w-full flex items-center justify-center border-t text-center text-xs gap-4 py-8">
-                <p>© 2024 SoccerRent - Tüm Hakları Saklıdır</p>
-                <ThemeSwitcher />
-              </footer>
             </div>
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
